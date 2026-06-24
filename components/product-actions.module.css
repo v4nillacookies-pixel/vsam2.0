@@ -1,0 +1,77 @@
+.actions {
+  display: grid;
+  gap: 14px;
+}
+
+.heart,
+.addButton,
+.quantity button {
+  border: 0;
+  border-radius: 999px;
+  font-weight: 800;
+}
+
+.heart {
+  justify-self: start;
+  padding: 10px 16px;
+  background: #eef8fd;
+  color: var(--blue-800);
+}
+
+.isActive {
+  background: #fff1f4;
+  color: var(--red);
+}
+
+.quantity {
+  display: inline-grid;
+  grid-template-columns: 42px 52px 42px;
+  width: max-content;
+  align-items: center;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: #ffffff;
+}
+
+.quantity button {
+  height: 42px;
+  background: #f3f8fb;
+  color: var(--blue-800);
+  font-size: 22px;
+}
+
+.quantity button:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
+
+.quantity span {
+  text-align: center;
+  font-weight: 900;
+}
+
+.addButton {
+  min-height: 52px;
+  background: var(--blue-700);
+  color: #ffffff;
+  font-size: 18px;
+  box-shadow: 0 10px 20px rgba(0, 103, 160, 0.22);
+}
+
+.feedback {
+  margin: 0;
+  padding: 10px 12px;
+  border-radius: 8px;
+  background: #eaf8ef;
+  color: var(--green);
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.note {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.45;
+}

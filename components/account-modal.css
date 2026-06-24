@@ -1,0 +1,117 @@
+.account-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  display: grid;
+  place-items: center;
+  padding: 18px;
+  background: rgba(0, 29, 47, 0.48);
+}
+
+.account-modal {
+  width: min(100%, 520px);
+  max-height: calc(100vh - 36px);
+  overflow: auto;
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: 0 24px 70px rgba(0, 29, 47, 0.32);
+}
+
+.account-modal-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: flex-start;
+  border-bottom: 1px solid var(--line);
+  padding: 20px;
+}
+
+.account-modal-heading p {
+  margin: 0 0 4px;
+  color: var(--blue-700);
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.account-modal-heading h2 {
+  margin: 0;
+  color: var(--ink);
+  font-size: 24px;
+}
+
+.account-modal-heading button {
+  display: grid;
+  width: 34px;
+  height: 34px;
+  place-items: center;
+  border: 0;
+  border-radius: 50%;
+  background: #eef6fb;
+  color: var(--blue-800);
+  font-weight: 900;
+}
+
+.account-form {
+  display: grid;
+  gap: 14px;
+  padding: 20px;
+}
+
+.account-form label {
+  display: grid;
+  gap: 7px;
+  color: var(--ink);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.account-form input {
+  width: 100%;
+  min-height: 44px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 0 12px;
+  color: var(--ink);
+  font: inherit;
+  outline: 0;
+}
+
+.account-form input:focus {
+  border-color: var(--blue-700);
+  box-shadow: 0 0 0 3px rgba(0, 103, 160, 0.14);
+}
+
+.account-modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  align-items: center;
+  margin-top: 4px;
+}
+
+.account-modal-actions button {
+  min-height: 42px;
+  border-radius: 999px;
+  padding: 0 18px;
+  font-weight: 900;
+}
+
+.account-modal-actions button:first-child {
+  border: 1px solid var(--blue-700);
+  background: #ffffff;
+  color: var(--blue-700);
+}
+
+.account-modal-actions button:last-child {
+  border: 0;
+  background: var(--blue-700);
+  color: #ffffff;
+}
+
+@media (max-width: 560px) {
+  .account-modal-actions {
+    flex-direction: column-reverse;
+    align-items: stretch;
+  }
+}

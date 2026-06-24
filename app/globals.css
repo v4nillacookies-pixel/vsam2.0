@@ -1,0 +1,52 @@
+:root {
+  --blue-900: #003f67;
+  --blue-800: #005b8f;
+  --blue-700: #0067a0;
+  --blue-600: #0071ad;
+  --blue-100: #e9f6fb;
+  --ink: #1f2933;
+  --muted: #657382;
+  --line: #d6dde5;
+  --surface: #ffffff;
+  --surface-soft: #f5f7fa;
+  --red: #c8202f;
+  --green: #18794e;
+  --yellow: #f8c44f;
+  --shadow: 0 12px 32px rgba(0, 45, 73, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--surface-soft);
+  color: var(--ink);
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
